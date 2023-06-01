@@ -68,27 +68,6 @@ def picked_side():
     return dice_sides[dice_side]
 
 
-# side = picked_side()
-# print(side)
-
-
-# def roll_dice():
-#     score = 0
-#     traps = 0
-#     if side == "treasure":
-#         print("you found a treasure of gold!")
-#         score += 1
-#     elif side == "empty":
-#         print("this chest is empty")
-#     else:
-#         print("Oh no! it was a trap")
-#         traps += 1
-#     print(f"Treasures Collected: {score}")
-#     print(f"Traps Triggered: {traps}")
-
-
-# roll_dice()
-
 def roll_dice(num):
     score = 0
     traps = 0
@@ -111,7 +90,7 @@ def play_game():
     traps = 0
     roll = input("Do you want to make a roll?(y/n) \n")
     while roll == "y" and traps < 4:
-        num_dice = input("How many dice? \n")
+        num_dice = input("how many dice? \n")
         dice_result = roll_dice(int(num_dice))
         score += dice_result[0]
         traps += dice_result[1]
