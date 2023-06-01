@@ -87,4 +87,15 @@ def roll_dice():
     print(f"Traps Triggered: {traps}")
 
 
-roll_dice()
+# roll_dice()
+
+
+def play_game():
+    roll = input("roll?(y/n) \n")
+    if roll == "y":
+        roll_dice()
+    elif roll == "n":
+        print("game over")
+
+
+play_game()
