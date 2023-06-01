@@ -2,22 +2,6 @@ import random
 from random import randint
 
 
-dices = [
-    "yellow",
-    "yellow",
-    "yellow",
-    "green",
-    "green",
-    "green",
-    "green",
-    "green",
-    "green",
-    "red",
-    "red",
-    "red"
-]
-
-
 def pick_dices():
 
     chosen_dice = random.randint(0, len(dices) - 1)
@@ -95,6 +79,20 @@ def play_game():
 
 if __name__ == "__main__":
 
+    dices = [
+        "yellow",
+        "yellow",
+        "yellow",
+        "green",
+        "green",
+        "green",
+        "green",
+        "green",
+        "green",
+        "red",
+        "red",
+        "red"
+    ]
     chosen_dice_color = pick_dices()
     dice_sides = generate_sides()
     print("Welcome to Adventure Dice")
