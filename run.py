@@ -24,3 +24,17 @@ def pick_dices():
     return chosen_dice_color
 
 
+chosen_dice_color = pick_dices()
+print(chosen_dice_color)
+
+
+def generate_sides():
+    if chosen_dice_color == "yellow":
+        print(['brains', 'brains', 'feet', 'feet', 'bombs', 'bombs'])
+    elif chosen_dice_color == "green":
+        print(['brains', 'brains', 'brains', 'feet', 'feet', 'bombs'])
+    else:
+        print(['brains', 'feet', 'feet', 'bombs', 'bombs', 'bombs'])
+
+
+generate_sides()
