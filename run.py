@@ -19,7 +19,8 @@ dices = [
 def pick_dices():
 
     chosen_dice = random.randint(0, len(dices))
-    print(dices[chosen_dice])
+    chosen_dice_color = (dices[chosen_dice])
+
+    return chosen_dice_color
 
 
-pick_dices()
