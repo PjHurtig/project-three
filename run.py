@@ -100,7 +100,9 @@ def play_game():
         roll = input("Roll again?(y/n) \n")
 
 
-print("Welcome to Adventure Dice")
-player = input("What is your name? \n")
-print(f"Hello {player} I hope you are ready to search for treasures!")
-play_game()
+if __name__ == "__main__":
+
+    print("Welcome to Adventure Dice")
+    player = input("What is your name? \n")
+    print(f"Hello {player} I hope you are ready to search for treasures!")
+    play_game()
