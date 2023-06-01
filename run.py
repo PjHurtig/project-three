@@ -18,7 +18,7 @@ dices = [
 
 def pick_dices():
 
-    chosen_dice = random.randint(0, len(dices))
+    chosen_dice = random.randint(0, len(dices) - 1)
     chosen_dice_color = (dices[chosen_dice])
 
     return chosen_dice_color
@@ -30,21 +30,30 @@ print(chosen_dice_color)
 
 def generate_sides():
     if chosen_dice_color == "yellow":
-        return ['brains', 'brains', 'feet', 'feet', 'bombs', 'bombs']
+        return ['ybrains', 'ybrains', 'yfeet', 'yfeet', 'ybombs', 'ybombs']
     elif chosen_dice_color == "green":
-        return ['brains', 'brains', 'brains', 'feet', 'feet', 'bombs']
+        return ['gbrains', 'gbrains', 'gbrains', 'gfeet', 'geet', 'gbombs']
     else:
-        return ['brains', 'feet', 'feet', 'bombs', 'bombs', 'bombs']
+        return ['rbrains', 'rfeet', 'rfeet', 'rbombs', 'rbombs', 'rbombs']
 
 
 dice_sides = generate_sides()
 
 
 def picked_side():
-    dice_side = random.randint(0, len(dice_sides))
+    dice_side = random.randint(0, len(dice_sides) - 1)
     return dice_sides[dice_side]
 
 
 side = picked_side()
-
 print(side)
+
+
+def roll_dice():
+    dice1 = pick_dices()
+    dice1_face = picked_side()
+
+    print(dice1, dice1_face)
+
+
+roll_dice()
