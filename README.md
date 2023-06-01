@@ -1,32 +1,17 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Adventure Dice
 
-Welcome,
+### This is a terminal dice game based on the Steve Jackson Games dice-game "Zombie Dice".
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+the goal of the game is to roll dice that represents treasures that the adventurer finds the deeper they go into the temple. at each round the adventurer can either roll 3 dice to open the chests or end their turn and get the points they have collected so far, but if 4 traps are triggered the game is over and all loot is lost!
 
-## Reminders
+live project here
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## User Stories
 
 ---
 
-Happy coding!
+- As a user I want to understand the purpose of the game
+- As a user I want to enter my adventurers name.
+- As a user I want to roll dice to see if i collect treasures or trigger traps
+- As a user I want to see my score and how many traps i have triggered so far
+- As a user I want to be able to end my adventure and get my score or keep going

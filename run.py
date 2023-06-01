@@ -1,4 +1,6 @@
 import random
+from random import randint
+
 
 dices = [
     "yellow",
@@ -30,11 +32,32 @@ print(chosen_dice_color)
 
 def generate_sides():
     if chosen_dice_color == "yellow":
-        return ['ybrains', 'ybrains', 'yfeet', 'yfeet', 'ybombs', 'ybombs']
+        return [
+            'treasure',
+            'treasure',
+            'empty',
+            'empty',
+            'trap',
+            'trap'
+        ]
     elif chosen_dice_color == "green":
-        return ['gbrains', 'gbrains', 'gbrains', 'gfeet', 'geet', 'gbombs']
+        return [
+            'treasure',
+            'treasure',
+            'empty',
+            'empty',
+            'treasure',
+            'trap'
+        ]
     else:
-        return ['rbrains', 'rfeet', 'rfeet', 'rbombs', 'rbombs', 'rbombs']
+        return [
+            'treasure',
+            'trap',
+            'empty',
+            'empty',
+            'trap',
+            'trap'
+        ]
 
 
 dice_sides = generate_sides()
@@ -49,11 +72,4 @@ side = picked_side()
 print(side)
 
 
-def roll_dice():
-    dice1 = pick_dices()
-    dice1_face = picked_side()
 
-    print(dice1, dice1_face)
-
-
-roll_dice()
