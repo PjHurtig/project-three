@@ -19,7 +19,7 @@ dices = [
 def pick_dices():
 
     chosen_dice = random.randint(0, len(dices))
-    print(chosen_dice)
+    print(dices[chosen_dice])
 
 
 pick_dices()
