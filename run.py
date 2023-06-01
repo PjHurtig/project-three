@@ -26,10 +26,6 @@ def pick_dices():
     return chosen_dice_color
 
 
-chosen_dice_color = pick_dices()
-# print(chosen_dice_color)
-
-
 def generate_sides():
     if chosen_dice_color == "yellow":
         return [
@@ -58,9 +54,6 @@ def generate_sides():
             'trap',
             'trap'
         ]
-
-
-dice_sides = generate_sides()
 
 
 def picked_side():
@@ -102,6 +95,8 @@ def play_game():
 
 if __name__ == "__main__":
 
+    chosen_dice_color = pick_dices()
+    dice_sides = generate_sides()
     print("Welcome to Adventure Dice")
     player = input("What is your name? \n")
     print(f"Hello {player} I hope you are ready to search for treasures!")
