@@ -72,4 +72,19 @@ side = picked_side()
 print(side)
 
 
+def roll_dice():
+    score = 0
+    traps = 0
+    if side == "treasure":
+        print("you found a treasure of gold!")
+        score += 1
+    elif side == "empty":
+        print("this chest is empty")
+    else:
+        print("Oh no! it was a trap")
+        traps += 1
+    print(f"Treasures Collected: {score}")
+    print(f"Traps Triggered: {traps}")
 
+
+roll_dice()
