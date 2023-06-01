@@ -37,4 +37,6 @@ def generate_sides():
         return ['brains', 'feet', 'feet', 'bombs', 'bombs', 'bombs']
 
 
-generate_sides()
+dice sides = generate_sides()
+
+
