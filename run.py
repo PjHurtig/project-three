@@ -109,16 +109,19 @@ def roll_dice(num):
 def play_game():
     score = 0
     traps = 0
-    roll = input("roll?(y/n) \n")
+    roll = input("Do you want to make a roll?(y/n) \n")
     while roll == "y" and traps < 4:
-        num_dice = input("how many dice? \n")
+        num_dice = input("How many dice? \n")
         dice_result = roll_dice(int(num_dice))
         score += dice_result[0]
         traps += dice_result[1]
 
         print(f"Treasures Collected: {score} \
             Traps Triggered: {traps}")
-        roll = input("roll?(y/n) \n")
+        roll = input("Roll again?(y/n) \n")
 
 
+print("Welcome to Adventure Dice")
+player = input("What is your name? \n")
+print(f"Hello {player} I hope you are ready to search for treasures!")
 play_game()
