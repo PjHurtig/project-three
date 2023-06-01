@@ -42,7 +42,9 @@ dice_sides = generate_sides()
 
 def picked_side():
     dice_side = random.randint(0, len(dice_sides))
-    print(dice_sides[dice_side])
+    return dice_sides[dice_side]
 
 
-picked_side()
+side = picked_side()
+
+print(side)
