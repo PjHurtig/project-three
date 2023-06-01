@@ -1,3 +1,25 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import random
+
+dices = [
+    "yellow",
+    "yellow",
+    "yellow",
+    "green",
+    "green",
+    "green",
+    "green",
+    "green",
+    "green",
+    "red",
+    "red",
+    "red"
+]
+
+
+def pick_dices():
+
+    chosen_dice = random.randint(0, len(dices))
+    print(chosen_dice)
+
+
+pick_dices()
