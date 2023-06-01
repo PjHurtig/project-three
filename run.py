@@ -92,10 +92,9 @@ def roll_dice():
 
 def play_game():
     roll = input("roll?(y/n) \n")
-    if roll == "y":
+    while roll == "y":
         roll_dice()
-    elif roll == "n":
-        print("game over")
+        roll = input("roll?(y/n) \n")
 
 
 play_game()
