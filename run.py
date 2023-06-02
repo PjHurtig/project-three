@@ -165,3 +165,11 @@ if __name__ == "__main__":
     player = input("What is your name, brave adventurer? \n")
     print(f"Greetings {player}! Get ready to search for treasures!\n")
     play_game()
+    while play_game:
+        play_again = input("Do you want to play again? (y/n): ")
+        if play_again == "n":
+            break
+        elif play_again == "y":
+            play_game()
+        else:
+            print(f"Please only enter y or n.")
