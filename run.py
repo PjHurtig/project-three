@@ -101,7 +101,7 @@ def play_game():
         result = roll_user_dices(user_dices)
         score += result[0]
         traps += result[1]
-        print(f"Dice Left: {dices}")
+        print(f"Dice Left: {dices}\n")
         print(f"Total Treasures Collected: {score} \
         Total Traps Triggered: {traps}")
         if dices == []:
@@ -138,10 +138,10 @@ if __name__ == "__main__":
 
     print("Welcome to Treasure Dice! \n")
     time.sleep(0.5)
-    print("Explore the old tomb and roll dice to go further in at every"
-          " treasure room. There are 12 dice, and at each room you must roll 2"
-          " to continue. Or stop and cash out. Green dice have few traps "
-          "and lots of treasures but the red are the opposite! Yellow  "
+    print("Explore the old tomb and roll dice to go further in at every "
+          "treasure room. There are 12 dice, and at each room you must roll 2 "
+          "to continue. Or stop and cash out. Green dice have few traps "
+          "and lots of treasures but the red are the opposite! Yellow "
           "dice are balanced between the two.")
     time.sleep(0.5)
     print("If you trigger 3 traps the game is over! So be careful... \n")
