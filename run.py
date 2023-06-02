@@ -87,13 +87,14 @@ def play_game():
     traps = 0
     roll = input("Do you want to make a roll?(y/n) \n")
     while roll == "y" and traps < 3:
-        while True:
-            num_dice = input("how many dice? (1-3) \n")
-            try:
-                num_dice = int(num_dice)
-                break
-            except ValueError:
-                print(f"Number of dice must be 1, 2 or 3 you put '{num_dice}'")
+        # while True:
+        #     num_dice = input("how many dice? (1-3) \n")
+        #     try:
+        #         num_dice = int(num_dice)
+        #         break
+        #     except ValueError:
+        #         print(f"Number of dice must be 1, 2 or 3 you put '{num_dice}'")
+        num_dice = 2
         user_dices = generate_dice(num_dice)
         result = roll_user_dices(user_dices)
         score += result[0]
