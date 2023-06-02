@@ -120,10 +120,18 @@ def play_game():
             print(f"Greedy greedy... Now you may never leave"
                   f" the tomb of {player}")
             break
-        roll = input("Do you dare to continue further?(y/n) \n")
-        if roll == "n":
-            print(f"\nWise or foolish, who knows. You leave in one piece with"
-                  f" {score} treasure \nWell done {player}!")
+        while play_game:
+            roll = input("Do you dare to continue further?(y/n) \n").lower()
+            if roll == "n":
+                print(f"\nWise or foolish, who knows. "
+                      "You leave in one piece with"
+                      f" {score} treasure \nWell done {player}!")
+                break
+            elif roll == "y":
+                print(f"\nVery well {player}, courage or folly, lets see...")
+                break
+            else:
+                print(f"Please only enter y or n. You entered '{roll}'")
 
 
 if __name__ == "__main__":
