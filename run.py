@@ -108,6 +108,7 @@ def play_game():
         result = roll_user_dices(user_dices)
         score += result[0]
         traps += result[1]
+        time.sleep(1)
         print(f"Dice Left: {dices}\n")
         print(f"Total Treasures Collected: {score} \
         Total Traps Triggered: {traps}")
