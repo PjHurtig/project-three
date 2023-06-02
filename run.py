@@ -1,4 +1,5 @@
 import random
+import time
 from random import randint
 
 
@@ -43,13 +44,13 @@ def roll_dice(side):
     score = 0
     traps = 0
     if side == "treasure":
-        print("you found a treasure of gold!\n")
+        # print("you found a treasure of gold!\n")
         score += 1
     elif side == "empty":
-        print("this chest is empty\n")
+        # print("this chest is empty\n")
         score += 0
     elif side == "trap":
-        print("Oh no! it was a trap\n")
+        # print("Oh no! it was a trap\n")
         traps += 0
 
     return [score, traps]
@@ -72,13 +73,24 @@ def roll_user_dices(user_dices):
     score = 0
     for dice in user_dices:
         current_dice = generate_sides(dice)
+        print(f"Rolling {dice} dice...")
         random_side = random.randint(0, 5)
         rolled_dice = roll_dice(current_dice[random_side])
+        # user_side = (current_dice[random_side])
         score += rolled_dice[0]
         traps += rolled_dice[1]
-        print(f"Rolled {dice} dice.")
-        print(f"Treasures Collected: {rolled_dice[0]} \
-            Traps Triggered: {rolled_dice[1]}")
+        # print(f"Rolling {dice} dice...")
+        # print(rolled_dice)
+        # print(random_side)
+        time.sleep(1.5)
+        if current_dice[random_side] == "trap":
+            print("Oh no! it was a trap\n")
+        elif current_dice[random_side] == "treasure":
+            print("you found a treasure of gold!\n")
+        elif current_dice[random_side] == "empty":
+            print("this chest is empty\n")
+        # print(f"Treasures Collected: {rolled_dice[0]} \
+        #     Traps Triggered: {rolled_dice[1]}")
     return [score, traps]
 
 
@@ -102,7 +114,7 @@ def play_game():
 
         print(f"Total Treasures Collected: {score} \
            Total Traps Triggered: {traps}")
-        roll = input("Roll again?(y/n) \n")
+        roll = input("Roll again?(y/n) \n\n")
 
 
 if __name__ == "__main__":
