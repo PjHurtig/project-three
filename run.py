@@ -69,13 +69,14 @@ def roll_user_dices(user_dices):
     traps = 0
     score = 0
     for dice in user_dices:
+        print(f"You got: {user_dices}")
         current_dice = generate_sides(dice)
         print(f"Rolling {dice} dice...")
         random_side = random.randint(0, 5)
         rolled_dice = roll_dice(current_dice[random_side])
         score += rolled_dice[0]
         traps += rolled_dice[1]
-        time.sleep(1.5)
+        time.sleep(1)
         if current_dice[random_side] == "trap":
             print("Oh no! it was a trap\n")
         elif current_dice[random_side] == "treasure":
@@ -95,10 +96,11 @@ def play_game():
         result = roll_user_dices(user_dices)
         score += result[0]
         traps += result[1]
-
+        print(user_dices)
+        print(f"Dice Left: {dices}")
         print(f"Total Treasures Collected: {score} \
            Total Traps Triggered: {traps}")
-        roll = input("Roll again?(y/n) \n\n")
+        roll = input("Roll again?(y/n) \n")
 
 
 if __name__ == "__main__":
