@@ -100,7 +100,7 @@ def play_game():
         elif roll == "y":
             break
         else:
-            print("try ty gain")
+            print(f"Please only enter y or n. You entered '{roll}'")
 
     while roll == "y" and traps < 3:
         num_dice = 2
