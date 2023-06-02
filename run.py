@@ -92,6 +92,9 @@ def play_game():
     traps = 0
     roll = input("You have entered the tomb and in front of you are two "
                  "chests do you want to open them (y/n) \n")
+    if roll == "n":
+        print(f"Hmmm, that was disapointing... "
+              f"Thanks for having a look {player}")
     while roll == "y" and traps < 3:
         num_dice = 2
         user_dices = generate_dice(num_dice)
@@ -103,8 +106,8 @@ def play_game():
         Total Traps Triggered: {traps}")
         roll = input("Do you dare to continue further?(y/n) \n")
         if roll == "n":
-            print(f"Wise or foolish, who knows. you leave in one piece with"
-                  f" {score} treasures \nWell done {player}!")
+            print(f"\nWise or foolish, who knows. You leave in one piece with"
+                  f" {score} treasure \nWell done {player}!")
 
 
 if __name__ == "__main__":
@@ -135,5 +138,5 @@ if __name__ == "__main__":
     print("If you trigger 3 traps the game is over! So be careful... \n")
     time.sleep(0.5)
     player = input("What is your name, brave adventurer? \n")
-    print(f"Greetings {player} Get ready to search for treasures!\n")
+    print(f"Greetings {player}! Get ready to search for treasures!\n")
     play_game()
