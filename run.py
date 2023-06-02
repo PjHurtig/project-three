@@ -3,6 +3,7 @@ import time
 from random import randint
 
 
+# picks dice from the "dices" list
 def pick_dices():
 
     chosen_dice = random.randint(0, len(dices) - 1)
@@ -10,6 +11,7 @@ def pick_dices():
     return chosen_dice_color
 
 
+# this function has all the sides for the different colors of dice
 def generate_sides(chosen_dice_color):
     if chosen_dice_color == "yellow":
         return [
@@ -40,6 +42,7 @@ def generate_sides(chosen_dice_color):
         ]
 
 
+# here the score or trap counter adds depending on the dice face
 def roll_dice(side):
     score = 0
     traps = 0
@@ -53,10 +56,10 @@ def roll_dice(side):
     return [score, traps]
 
 
+# removes dice from the "dices" list after every roll
 def generate_dice(num_dice):
     dice = []
     generated = 0
-    # add validation!
     while generated < num_dice:
         index = random.randint(0, len(dices) - 1)
         dice.append(dices[index])
@@ -87,6 +90,7 @@ def roll_user_dices(user_dices):
     return [score, traps]
 
 
+# the main function that plays the game
 def play_game():
     score = 0
     traps = 0
@@ -135,6 +139,7 @@ def play_game():
                 print(f"Please only enter y or n. You entered '{roll}'")
 
 
+# welcome message that can be called when starting new game
 def welcome_message():
     print("Welcome to Treasure Dice! \n")
     time.sleep(0.5)
@@ -150,6 +155,7 @@ def welcome_message():
 
 if __name__ == "__main__":
 
+    # the list of available dice of each color
     dices = [
         "yellow",
         "yellow",
@@ -169,6 +175,7 @@ if __name__ == "__main__":
     player = input("What is your name, brave adventurer? \n")
     print(f"Greetings {player}! Get ready to search for treasures!\n")
     play_game()
+    # play again function to play again
     while play_game:
         play_again = input("Do you want to play again? (y/n): ")
         if play_again == "n":
