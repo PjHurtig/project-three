@@ -1,8 +1,10 @@
 # Treasure Dice
 
-### This is a terminal dice game based on the Steve Jackson Games dice-game "Zombie Dice".
+### This is a terminal dice game loosely based on the Steve Jackson Games dice-game "Zombie Dice".
 
-the goal of the game is to roll dice that represents treasures that the adventurer finds the deeper they go into the temple. at each round the adventurer can either roll 3 dice to open the chests or end their turn and get the points they have collected so far, but if 4 traps are triggered the game is over and all loot is lost!
+[Steve Jackson Games](http://www.sjgames.com/dice/zombiedice/)
+
+the goal of the game is to roll dice that represents treasures that the adventurer finds the deeper they go into the tomb. at each round the adventurer can either roll 2 dice to open the chests or end their turn and get the points they have collected so far, but if 3 traps are triggered the game is over and all loot is lost!
 
 [live project here](https://treasure-dice.herokuapp.com/)
 
@@ -24,6 +26,8 @@ the goal of the game is to roll dice that represents treasures that the adventur
 
 
 ## Design
+
+The game loosely based on the analog dice-game ["Zombie Dice"](http://www.sjgames.com/dice/zombiedice/) and turned into this single player "push-your-luck" terminal game with a new theme and a few different rules.
 
 ---
 
@@ -125,6 +129,11 @@ https://pep8ci.herokuapp.com/
 ---
 
 ### Content
+
+- The game loosely based on the Steve Jackson Games dice-game ["Zombie Dice"](http://www.sjgames.com/dice/zombiedice/).
+
+
+
 
 ### Code
 
