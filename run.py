@@ -172,7 +172,14 @@ if __name__ == "__main__":
     ]
 
     welcome_message()
-    player = input("What is your name, brave adventurer? \n")
+    while True:
+        player = input("What is your name, brave adventurer? \n")
+        if player == "":
+            print("You must enter a name to searh for treasure")
+        elif player == " ":
+            print("You must enter a name to searh for treasure")
+        else:
+            break
     print(f"Greetings {player}! Get ready to search for treasures!\n")
     play_game()
     # play again function to play again
