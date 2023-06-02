@@ -79,18 +79,19 @@ def roll_user_dices(user_dices):
         traps += rolled_dice[1]
         time.sleep(1)
         if current_dice[random_side] == "trap":
-            print("Oh no! it was a trap\n")
+            print("Oh no! It was a trap\n")
         elif current_dice[random_side] == "treasure":
-            print("you found a treasure of gold!\n")
+            print("You found a treasure of gold!\n")
         elif current_dice[random_side] == "empty":
-            print("this chest is empty\n")
+            print("This chest is empty\n")
     return [score, traps]
 
 
 def play_game():
     score = 0
     traps = 0
-    roll = input("Do you want to make a roll?(y/n) \n")
+    roll = input("You have entered the tomb and in front of you are two "
+                 "chests do you want to open them (y/n) \n")
     while roll == "y" and traps < 3:
         num_dice = 2
         user_dices = generate_dice(num_dice)
@@ -99,8 +100,11 @@ def play_game():
         traps += result[1]
         print(f"Dice Left: {dices}")
         print(f"Total Treasures Collected: {score} \
-           Total Traps Triggered: {traps}")
-        roll = input("Roll again?(y/n) \n")
+        Total Traps Triggered: {traps}")
+        roll = input("Do you dare to continue further?(y/n) \n")
+        if roll == "n":
+            print(f"Wise or foolish, who knows. you leave in one piece with"
+                  f" {score} treasures \nWell done {player}!")
 
 
 if __name__ == "__main__":
@@ -120,7 +124,16 @@ if __name__ == "__main__":
         "red"
     ]
 
-    print("Welcome to Adventure Dice")
-    player = input("What is your name? \n")
-    print(f"Hello {player} I hope you are ready to search for treasures!")
+    print("Welcome to Treasure Dice! \n")
+    time.sleep(0.5)
+    print("Explore the old tomb and roll dice to go further in at every"
+          " treasure room. There are 12 dice, and at each room you must roll 2"
+          " to continue. Or stop and cash out. Green dice have few traps "
+          "and lots of treasures but the red are the opposite! Yellow  "
+          "dice are balanced between the two.")
+    time.sleep(0.5)
+    print("If you trigger 3 traps the game is over! So be careful... \n")
+    time.sleep(0.5)
+    player = input("What is your name, brave adventurer? \n")
+    print(f"Greetings {player} Get ready to search for treasures!\n")
     play_game()
