@@ -104,6 +104,10 @@ def play_game():
         print(f"Dice Left: {dices}")
         print(f"Total Treasures Collected: {score} \
         Total Traps Triggered: {traps}")
+        if traps > 2:
+            print(f"Greedy greedy... Now you may never leave"
+                  f" the tomb of {player}")
+            break
         roll = input("Do you dare to continue further?(y/n) \n")
         if roll == "n":
             print(f"\nWise or foolish, who knows. You leave in one piece with"
