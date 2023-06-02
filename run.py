@@ -68,8 +68,9 @@ def generate_dice(num_dice):
 def roll_user_dices(user_dices):
     traps = 0
     score = 0
+    print(f"You got: {user_dices}\n")
     for dice in user_dices:
-        print(f"You got: {user_dices}")
+        time.sleep(1)
         current_dice = generate_sides(dice)
         print(f"Rolling {dice} dice...")
         random_side = random.randint(0, 5)
@@ -96,7 +97,6 @@ def play_game():
         result = roll_user_dices(user_dices)
         score += result[0]
         traps += result[1]
-        print(user_dices)
         print(f"Dice Left: {dices}")
         print(f"Total Treasures Collected: {score} \
            Total Traps Triggered: {traps}")
