@@ -6,6 +6,10 @@ the goal of the game is to roll dice that represents treasures that the adventur
 
 [live project here](https://treasure-dice.herokuapp.com/)
 
+![flowchart](https://i.imgur.com/eXrEECr.png)
+
+![flowchart](https://i.imgur.com/SDLr3up.png)
+
 ## User Experience - UX
 
 ---
@@ -24,6 +28,8 @@ the goal of the game is to roll dice that represents treasures that the adventur
 ---
 
 ### Flowshart
+
+![flowchart](https://i.imgur.com/2v5cJaN.png)
 
 ## Features
 
@@ -74,7 +80,11 @@ the goal of the game is to roll dice that represents treasures that the adventur
 ### CI Python Lint
 https://pep8ci.herokuapp.com/
 
+![flowchart](https://i.imgur.com/vNDHrqQ.png)
+
 ### Lighthouse
+
+![flowchart](https://i.imgur.com/WeIe1zR.png)
 
 ## Manual Testing
 
@@ -92,11 +102,15 @@ https://pep8ci.herokuapp.com/
 
 ---
 
-### Same dice faces were resused
-
 ### Index is out of range
 
+![flowchart](https://i.imgur.com/VI8rxZk.png)
+
 ### Total traps are not updating
+
+![flowchart](https://i.imgur.com/Ct8CLrs.png)
+
+![flowchart](https://i.imgur.com/xdhPvOU.png)
 
 ## Deploying the project
 
