@@ -104,6 +104,11 @@ def play_game():
         print(f"Dice Left: {dices}")
         print(f"Total Treasures Collected: {score} \
         Total Traps Triggered: {traps}")
+        if dices == []:
+            print("No more rooms to explore in this tomb! "
+                  f"you leave alive with {score} treasure"
+                  f"\nWell done {player}!")
+            break
         if traps > 2:
             print(f"Greedy greedy... Now you may never leave"
                   f" the tomb of {player}")
