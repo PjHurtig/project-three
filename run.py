@@ -90,11 +90,18 @@ def roll_user_dices(user_dices):
 def play_game():
     score = 0
     traps = 0
-    roll = input("You have entered the tomb and in front of you are two "
-                 "chests do you want to open them (y/n) \n")
-    if roll == "n":
-        print(f"Hmmm, that was disapointing... "
-              f"Thanks for having a look {player}")
+    while play_game:
+        roll = input("You have entered the tomb and in front of you are two "
+                     "chests do you want to open them (y/n) \n").lower()
+        if roll == "n":
+            print(f"Hmmm, that was disapointing... "
+                  f"Thanks for having a look {player}")
+            break
+        elif roll == "y":
+            break
+        else:
+            print("try ty gain")
+
     while roll == "y" and traps < 3:
         num_dice = 2
         user_dices = generate_dice(num_dice)
