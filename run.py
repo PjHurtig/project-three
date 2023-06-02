@@ -39,39 +39,17 @@ def generate_sides(chosen_dice_color):
         ]
 
 
-# def picked_side():
-#     dice_side = random.randint(0, len(dice_sides) - 1)
-#     return dice_sides[dice_side]
-
-
-# def roll_dice(num):
-#     score = 0
-#     traps = 0
-#     for x in range(num):
-#         side = picked_side()
-#         if side == "treasure":
-#             print("you found a treasure of gold!\n")
-#             score += 1
-#         elif side == "empty":
-#             print("this chest is empty\n")
-#         elif side == "trap":
-#             print("Oh no! it was a trap\n")
-#             traps += 1
-
-#     return [score, traps]
-
-
 def roll_dice(side):
     score = 0
     traps = 0
     if side == "treasure":
-        # print("you found a treasure of gold!\n")
+        print("you found a treasure of gold!\n")
         score += 1
     elif side == "empty":
-        # print("this chest is empty\n")
+        print("this chest is empty\n")
         score += 0
     elif side == "trap":
-        # print("Oh no! it was a trap\n")
+        print("Oh no! it was a trap\n")
         traps += 0
 
     return [score, traps]
@@ -120,9 +98,6 @@ def play_game():
         result = roll_user_dices(user_dices)
         score += result[0]
         traps += result[1]
-        # dice_result = roll_dice(int(num_dice))
-        # score += dice_result[0]
-        # traps += dice_result[1]
 
         print(f"Total Treasures Collected: {score} \
            Total Traps Triggered: {traps}")
@@ -145,8 +120,7 @@ if __name__ == "__main__":
         "red",
         "red"
     ]
-    # chosen_dice_color = pick_dices()
-    # dice_sides = generate_sides()
+
     print("Welcome to Adventure Dice")
     player = input("What is your name? \n")
     print(f"Hello {player} I hope you are ready to search for treasures!")
