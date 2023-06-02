@@ -44,13 +44,10 @@ def roll_dice(side):
     score = 0
     traps = 0
     if side == "treasure":
-        # print("you found a treasure of gold!\n")
         score += 1
     elif side == "empty":
-        # print("this chest is empty\n")
         score += 0
     elif side == "trap":
-        # print("Oh no! it was a trap\n")
         traps += 1
 
     return [score, traps]
@@ -76,12 +73,8 @@ def roll_user_dices(user_dices):
         print(f"Rolling {dice} dice...")
         random_side = random.randint(0, 5)
         rolled_dice = roll_dice(current_dice[random_side])
-        # user_side = (current_dice[random_side])
         score += rolled_dice[0]
         traps += rolled_dice[1]
-        # print(f"Rolling {dice} dice...")
-        # print(rolled_dice)
-        # print(random_side)
         time.sleep(1.5)
         if current_dice[random_side] == "trap":
             print("Oh no! it was a trap\n")
@@ -89,8 +82,6 @@ def roll_user_dices(user_dices):
             print("you found a treasure of gold!\n")
         elif current_dice[random_side] == "empty":
             print("this chest is empty\n")
-        # print(f"Treasures Collected: {rolled_dice[0]} \
-        #     Traps Triggered: {rolled_dice[1]}")
     return [score, traps]
 
 
@@ -99,13 +90,6 @@ def play_game():
     traps = 0
     roll = input("Do you want to make a roll?(y/n) \n")
     while roll == "y" and traps < 3:
-        # while True:
-        #     num_dice = input("how many dice? (1-3) \n")
-        #     try:
-        #         num_dice = int(num_dice)
-        #         break
-        #     except ValueError:
-        #         print(f"Number of dice must be 1, 2 or 3 you put '{num_dice}'")
         num_dice = 2
         user_dices = generate_dice(num_dice)
         result = roll_user_dices(user_dices)
