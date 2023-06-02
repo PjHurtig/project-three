@@ -51,7 +51,7 @@ def roll_dice(side):
         score += 0
     elif side == "trap":
         # print("Oh no! it was a trap\n")
-        traps += 0
+        traps += 1
 
     return [score, traps]
 
