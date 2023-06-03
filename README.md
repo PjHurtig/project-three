@@ -41,29 +41,69 @@ The game loosely based on the analog dice-game ["Zombie Dice"](http://www.sjgame
 
 ### Welcome message and rules
 
+This i what is first shown upon running the program. A simple explanation of the rules with a little bit of thematic flavour.
+
+![flowchart](https://i.imgur.com/DfzGvow.png)
+
 ### Enter Name
+
+After reading the introductory message the user is prompted to enter their name which is then used to refer to the player throughout the game.
+
+![flowchart](https://i.imgur.com/t7q5k7h.png)
 
 ### Timing
 
+The time.sleep has been used to add suspense between rolls and to separate the executed functions with delay for readability and a better user experience.
+
 ### Start rolling for treasure
+
+The first time the user rolls there is a text telling them that they have entered the tomb and the user gets to choose to start opening chests (by rolling dice) or not.
+
+![flowchart](https://i.imgur.com/MZ1BV32.png)
 
 ### Dice left
 
+Every time the user rolls, the dice that are left and what colour they are is printed so that the user can make a decision if the risk is worth it to continue. Remember, the different coloured dice have different risk and reward!
+
+![flowchart](https://i.imgur.com/G31Y0Yt.png)
+
 ### Total treasures and traps triggered
+
+
+Every time the user rolls, the total traps triggered and total treasures collected is printed so that the user is always up to date with the score and risk of rolling again.
+
+![flowchart](https://i.imgur.com/zdseOQf.png)
 
 ### Too many traps triggered
 
+If the user chose to push their luck a little too far and triggered 3 or more traps, then the game is over and the user gets an end game message.
+
+![flowchart](https://i.imgur.com/MvyJEAc.png)
+
 ### End game with collected treasures
+
+If the user does not push their luck beyond the limit and wants to end with the treasure collected theu get a message with the final score. But could they have gotten more? 
+
+![flowchart](https://i.imgur.com/q0PwWwW.png)
 
 ### No dice left
 
+If the player survives through all the six rooms the game gives this end message that tells the player that they completed the tomb and gives the final score. 
+
+![flowchart](https://i.imgur.com/b7xQdAT.png)
+
 ### Did not play
+
+If the player for some reason goes to the trouble of entering their name and then does not want to play, they can choose "n" at the very first dice roll prompt to get this message:
+
+![flowchart](https://i.imgur.com/b9vQW16.png)
 
 ## Rules of the game
 
 ---
 
 ### Dice
+
 
 ### Traps
 
