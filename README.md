@@ -131,9 +131,9 @@ When a treasure is rolled, the "total treasures counter" adds 1, and the goal is
 
 #### Python Packages/Libraries and more
 
-- Python [time](https://docs.python.org/3/library/time.html)
+- Python [time](https://docs.python.org/3/library/time.html) is used to add a delay to enhance the user experience
 
-- Python [random](https://docs.python.org/3/library/random.html)
+- Python [random](https://docs.python.org/3/library/random.html) is used to generate pseudo-random dice
 
 
 ### Other technologies used
