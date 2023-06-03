@@ -138,7 +138,7 @@ When a treasure is rolled, the "total treasures counter" adds 1, and the goal is
 
 ### Other technologies used
 
-- [Imgur]() for hosting the images in this readme
+- [Imgur](https://imgur.com/) for hosting the images in this readme
 - [Github](https://github.com/) for version control and storage of project code
 - [CodeAnywhere](https://codeanywhere.com/) as IDE
 - [Heroku](heroku.com) to deploy the project
