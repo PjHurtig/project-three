@@ -188,6 +188,7 @@ if __name__ == "__main__":
         if play_again == "n":
             break
         elif play_again == "y":
+            welcome_message()
             play_game()
         else:
             print(f"Please only enter y or n.")
