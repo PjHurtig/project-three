@@ -189,17 +189,17 @@ The most important testing i think has been that the user is only able to enter 
 
 This error came up sometimes when rolling the dice and was because the way the code was written the random function could choose one number outside of the intended list, this was fixed with " - 1" to the affected lines.
 
-![flowchart](https://i.imgur.com/VI8rxZk.png)
+![of range](https://i.imgur.com/VI8rxZk.png)
 
 ### Total traps are not updating
 
 After testing and adding some code the total traps did not add when traps were triggered.
 
-![flowchart](https://i.imgur.com/Ct8CLrs.png)
+![Total traps](https://i.imgur.com/Ct8CLrs.png)
 
 After some troubleshooting i found that the traps += was set to 0 so i fixed that and the code worked as intended again.
 
-![flowchart](https://i.imgur.com/xdhPvOU.png)
+![updating](https://i.imgur.com/xdhPvOU.png)
 
 ## Deploying the project
 
@@ -207,7 +207,43 @@ After some troubleshooting i found that the traps += was set to 0 so i fixed tha
 
 ### Deploying with Heroku
 
+* This site was deployed by completing the following steps:
+
+1. Log in to [Heroku](https://id.heroku.com) or create an account
+2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create New App
+3. You must enter a unique app name
+4. Next select your region
+5. Click on the Create App button
+6. The next page is the projects Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
+7. Click Reveal Config Vars and enter PORT into the Key box and 8000 into the Value box and click the Add button
+8. Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
+9. Repeat step 8 to add node.js. o Note: The Buildpacks must be in the correct order. If not click and drag them to move into the correct order
+10. Scroll to the top of the page and choose the Deploy tab
+11. Select Github as the deployment method
+12. Confirm you want to connect to GitHub
+13. Search for the repository name and click the connect button
+14. Scroll to the bottom of the deploy page and select the preferred deployment type
+15. Click either Enable Automatic Deploys for automatic deployment when you push updates to Github
+
+## Forking This Project
+
+* Fork this project by following the steps:
+
+1. Open [GitHub](https://github.com/)
+2. Click on the project to be forked
+3. Find the Fork button at the top right of the page
+4. Once you click the button the fork will be in your repository
+
 ### Clone the project
+
+1. Open [GitHub](https://github.com/)
+2. Click on the project to be cloned
+3. You will be provided with three options to choose from, HTTPS, SSH, or GitHub CLI, click the clipboard icon in order to copy the URL
+4. Once you click the button the fork will be in your repository
+5. Open a new terminal
+6. Change the current working directory to the location that you want the cloned directory
+7. Type git clone and paste the URL copied in step 3
+8. Press Enter and the project is cloned
 
 ## Credits
 
@@ -217,13 +253,16 @@ After some troubleshooting i found that the traps += was set to 0 so i fixed tha
 
 - The game loosely based on the Steve Jackson Games dice-game ["Zombie Dice"](http://www.sjgames.com/dice/zombiedice/).
 
+- The outline of this readme and the deployment section is based on [PedroCristo's](https://github.com/PedroCristo) portfolio_project_3 readme
 
-
+- Text content made by me
 
 ### Code
 
-- time sleep : https://www.guru99.com/python-time-sleep-delay.html
+- time sleep information: [guru99](https://www.guru99.com/python-time-sleep-delay.html)
 
 ## Special thanks
 
 ---
+
+Family and friends that has supported my studies and my mentor Anto Rodriguez that is a reliable support through the projects.
