@@ -139,6 +139,24 @@ def play_game():
                 print(f"Please only enter y or n. You entered '{roll}'")
 
 
+# resets the dice list to starting set
+def reset_game():
+    return [
+        "yellow",
+        "yellow",
+        "yellow",
+        "green",
+        "green",
+        "green",
+        "green",
+        "green",
+        "green",
+        "red",
+        "red",
+        "red"
+    ]
+
+
 # welcome message that can be called when starting new game
 def welcome_message():
     print("Welcome to Treasure Dice! \n")
@@ -182,12 +200,13 @@ if __name__ == "__main__":
             break
     print(f"Greetings {player}! Get ready to search for treasures!\n")
     play_game()
-    # play again function to play again
+    # play again loop to play again
     while play_game:
         play_again = input("Do you want to play again? (y/n): ")
         if play_again == "n":
             break
         elif play_again == "y":
+            dices = reset_game()
             welcome_message()
             play_game()
         else:
