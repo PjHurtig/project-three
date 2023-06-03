@@ -122,7 +122,7 @@ def play_game():
                   f"\nWell done {player}!")
             break
         if traps > 2:
-            print(f"Greedy greedy... Now you may never leave"
+            print(f"\nGreedy greedy... Now you may never leave"
                   f" the tomb of {player}")
             break
         while play_game:
