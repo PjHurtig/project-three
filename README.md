@@ -187,11 +187,17 @@ The most important testing i think has been that the user is only able to enter 
 
 ### Index is out of range
 
+This error came up sometimes when rolling the dice and was because the way the code was written the random function could choose one number outside of the intended list, this was fixed with " - 1" to the affected lines.
+
 ![flowchart](https://i.imgur.com/VI8rxZk.png)
 
 ### Total traps are not updating
 
+After testing and adding some code the total traps did not add when traps were triggered.
+
 ![flowchart](https://i.imgur.com/Ct8CLrs.png)
+
+After some troubleshooting i found that the traps += was set to 0 so i fixed that and the code worked as intended again.
 
 ![flowchart](https://i.imgur.com/xdhPvOU.png)
 
