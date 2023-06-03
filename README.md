@@ -141,7 +141,7 @@ When a treasure is rolled, the "total treasures counter" adds 1, and the goal is
 - [Imgur](https://imgur.com/) for hosting the images in this readme
 - [Github](https://github.com/) for version control and storage of project code
 - [CodeAnywhere](https://codeanywhere.com/) as IDE
-- [Heroku](heroku.com) to deploy the project
+- [Heroku](https://www.heroku.com/) to deploy the project
 - [CI Linter](https://pep8ci.herokuapp.com/) was used to validate all code
 - [diagrams.net](https://app.diagrams.net/) was used to make the flowchart
 
