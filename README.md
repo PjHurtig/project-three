@@ -98,6 +98,13 @@ If the player, for some reason, goes to the trouble of entering their name and t
 
 ![Did not play](https://i.imgur.com/b9vQW16.png)
 
+## Future Features
+
+In the future i want to add some more features that i think will improve the enjoyment of playing the game.
+
+- Leaderboard for user scores
+- Another level with increased difficulty
+- Unlockable special dice
 
 ## Rules of the game
 
