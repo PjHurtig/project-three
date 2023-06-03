@@ -98,20 +98,36 @@ If the player for some reason goes to the trouble of entering their name and the
 
 ![flowchart](https://i.imgur.com/b9vQW16.png)
 
+
 ## Rules of the game
 
 ---
 
 ### Dice
 
+There are 12 dice each with six sides in the game. Each dice have a color that represents the number of traps, treasures and empty the user can get by rolling them.
+
+- Green Dice: This is the most favourable dice, 3 treasures, 2 empty and only 1 trap.
+
+- Yellow Dice: This is the middle-of-the-line dice, 2 treasures, 2 empty and 2 traps.
+
+- Red Dice: The most dangerous dice, 3 traps, 2 empty and only 1 treasure.
 
 ### Traps
 
+When a trap is rolled, the "total traps counter" adds 1 and if the user gets 3 the game is over.
+
 ### Treasures
+
+When a treasure is rolled, the "total treasures counter" adds 1 and the goal is to collect as many as possible before they run out of dice or the total traps is 3 or more.
 
 ## Technologies Used
 
+---
+
 ### Language
+
+Python
 
 #### Python Packages
 
