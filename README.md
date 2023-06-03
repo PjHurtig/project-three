@@ -175,12 +175,6 @@ The most important testing, I think, has been that the user is only able to ente
 
 ![no dice](https://i.imgur.com/b7xQdAT.png)
 
-### Did not play
-
-### End game with collected treasures
-
-### Too many traps triggered
-
 ## Bugs
 
 ---
